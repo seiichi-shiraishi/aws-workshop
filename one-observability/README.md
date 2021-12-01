@@ -37,3 +37,43 @@ Service Stack がかなり時間かかる。4０mくらい。
 
 ### カスタムルールの作成
 API Gateway -> Log full requests/responses data にチェックすると、ログデータをCloudWatchに送信できる
+
+## CloudWatch Synthetics
+> Amazon CloudWatch Syntetics を使用して、スケジュールに従って実行される設定可能なスクリプトを作成し、エンドポイントと API を監視できます。
+> Canaries はエンドポイントの可用性とレイテンシーをチェックし、読み込み時間データとUIのスクリーンショットを格納できます。REST API、URL、Web サイトのコンテンツを監視し、フィッシング、コードインジェクション、クロスサイトスクリプティングによる不正な変更がないかチェックできます。
+
+> VPC 設定 Canary を配置する VPC を選択することもできます。これは、非公開エンドポイントをテストする場合に重要です。
+
+APIのカナリアテストも可能。
+
+## Container Insights
+> CloudWatch Container Insights を使用して、コンテナ化されたアプリケーションとマイクロサービスから、メトリクスとログを収集、集計できます。
+
+TBD
+
+## Logs Insights
+> CloudWatch Logs Insights には、サンプルクエリ、コマンドの説明、クエリの自動補完、およびログフィールド検出が用意されています。
+> CloudWatch Logs Insights は、Amazon Route 53、AWS Lambda、AWS CloudTrail、Amazon VPC などの AWS サービス、および JSON としてログイベントを発行するアプリケーションログまたはカスタムログからログ内のフィールドを自動的に検出します。
+
+## Lambda Insights
+> Lambda Insights は ServiceLens と統合されています。以下の図のように、 View をクリックすると、特定の関数の実行に関する X-Ray のトレースを表示することができます。
+
+## メトリクス
+> Amazon EC2 インスタンスなどの一部のリソースの詳細モニタリングを有効にしたり、独自のアプリケーションメトリクスを公開することもできます。Amazon CloudWatch は、検索、グラフ化、アラームのために、アカウント内のすべてのメトリクス（AWS リソースメトリクスとユーザーが提供するアプリケーションメトリクスの両方）を利用できます。
+
+## ダッシュボード
+## 異常検出
+## 埋め込みメトリックフォーマット
+## アラーム
+
+TBD
+
+## Amazon Managed Service for Prometheus
+> Amazon Managed Service for Prometheusは、Prometheusメトリクスの取り込み、保存、クエリー、アラートに対する水平スケーラビリティを追加するオープンソースのCNCFプロジェクトであるCortexを搭載しています。Amazon Managed Service for Prometheus は、Amazon Elastic Kubernetes Service と Amazon Elastic Container Service、および自己管理型 Kubernetes クラスター全体にわたるアプリケーションの監視を開始するために必要な負荷を軽減します。
+
+## Amazon Managed Grafana
+> AMG は、Amazon CloudWatch、Amazon Elasticsearch Service、Amazon Timestream、AWS IoT SiteWise、AWS X-Ray、Amazon Managed Service for Prometheus (AMP) などの運用データを収集する AWS データソースと統合され、一般的なオープンソースデータベース、サードパーティのモニタリングツールへのプラグインを提供します。AMG を使用すると、複数の AWS サービス、AWS アカウント、およびリージョンの情報を 1 つの Grafana ダッシュボードで簡単に視覚化できます。
+
+## AWS Distro for OpenTelemetry 
+> AWS ディストリビューションを OpenTelemetry で使用して、Amazon Elastic Compute Cloud (EC2)、Amazon Elastic Container Service (ECS)、Amazon Elastic Kubernetes Service (EKS) on EC2、AWS Fargate、AWS Lambda、オンプレミスで実行しているアプリケーションを計測できます。
+
